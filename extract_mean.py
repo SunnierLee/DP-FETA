@@ -29,7 +29,7 @@ elif "camelyon" == data_name:
     dataset = ImageFolderDataset(data_dir, split='train', resolution=32, use_labels=use_labels, attr=attr)
 elif data_name == "mnist":
     num_classes = 10
-    data_dir = '/u/fzv6en/kecen/data'
+    data_dir = ''
     dataset = torchvision.datasets.MNIST(data_dir, download=True, train=True, transform=transforms.ToTensor())
 elif data_name == "fmnist":
     num_classes = 10
