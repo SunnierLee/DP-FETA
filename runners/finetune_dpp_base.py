@@ -18,9 +18,6 @@ from denoiser import EDMDenoiser, VPSDEDenoiser, VESDEDenoiser, VDenoiser
 from samplers import ddim_sampler, edm_sampler
 from runners.generate_base import sample_batch
 
-import importlib
-opacus = importlib.import_module('src.opacus')
-
 from opacus import PrivacyEngine
 from opacus.utils.batch_memory_manager import BatchMemoryManager
 from opacus.distributed import DifferentiallyPrivateDistributedDataParallel as DPDDP
